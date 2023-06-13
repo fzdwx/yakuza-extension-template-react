@@ -1,6 +1,0 @@
-@import './global.scss';
-@import './raycast.scss';
-
-[command-list]{
-    @apply h-[461px]
-}
