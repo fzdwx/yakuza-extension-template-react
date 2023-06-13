@@ -4,4 +4,5 @@
 $ pnpm install
 $ pnpm run build
 ```
-2
+
+is https://github.com/fzdwx/launcher extension sample 
