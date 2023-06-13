@@ -1,0 +1,8 @@
+import './assets/main.css'
+import '@fzdwx/launcher-api/dist/style.css'
+
+import { createApp } from 'vue'
+// @ts-ignore
+import App from './App.vue'
+
+createApp(App).mount('#app')
