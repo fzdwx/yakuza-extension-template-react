@@ -13,7 +13,11 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@fzdwx/launcher-api": "^0.0.10",
+    "fuse.js": "^6.6.2",
+    "mitt": "^3.0.0",
+    "nanoid": "^4.0.2",
+    "sass": "^1.63.3",
+    "@fzdwx/launcher-api": "^0.0.14",
     "@tsconfig/node18": "^2.0.1",
     "@types/node": "^18.16.17",
     "@vitejs/plugin-vue": "^4.2.3",
@@ -24,11 +28,9 @@
     "vite": "^4.3.9",
     "vue-tsc": "^1.6.5"
   },
-  "main": "index.html",
+  "dir": "index.html",
   "logo": "https://static.91jkys.com/attachment/kaer-admin/476bbe78674441bc8c904f6b14e450c8ba71d16f9ffe3e04b75bbd5760c8a738.png",
-  "preload": "preload.js",
   "homePage": "https://gitee.com/rubick-center/rubick-ui-plugin-demo/raw/master/README.md",
-  "pluginType": "ui",
   "features": [
     {
       "code": "index",

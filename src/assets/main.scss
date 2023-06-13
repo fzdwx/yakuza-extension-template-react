@@ -1,3 +1,11 @@
-[command-input]{
+[command-input] {
   @apply caret-emerald-400
+}
+
+[command-dialog-body] {
+  height: 463px !important;
+}
+
+.hidden {
+  display: none !important;
 }

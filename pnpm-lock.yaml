@@ -14,8 +14,8 @@ dependencies:
 
 devDependencies:
   '@fzdwx/launcher-api':
-    specifier: ^0.0.10
-    version: 0.0.10(primeflex@3.3.1)(primeicons@5.0.0)(primevue@3.29.2)(vue@3.3.4)
+    specifier: ^0.0.14
+    version: 0.0.14(primeflex@3.3.1)(primeicons@5.0.0)(primevue@3.29.2)(vue@3.3.4)
   '@tsconfig/node18':
     specifier: ^2.0.1
     version: registry.npmmirror.com/@tsconfig/node18@2.0.1
@@ -31,6 +31,15 @@ devDependencies:
   '@vue/tsconfig':
     specifier: ^0.4.0
     version: registry.npmmirror.com/@vue/tsconfig@0.4.0
+  fuse.js:
+    specifier: ^6.6.2
+    version: 6.6.2
+  mitt:
+    specifier: ^3.0.0
+    version: 3.0.0
+  nanoid:
+    specifier: ^4.0.2
+    version: 4.0.2
   npm-run-all:
     specifier: ^4.1.5
     version: registry.npmmirror.com/npm-run-all@4.1.5
@@ -244,8 +253,8 @@ packages:
     dev: true
     optional: true
 
-  /@fzdwx/launcher-api@0.0.10(primeflex@3.3.1)(primeicons@5.0.0)(primevue@3.29.2)(vue@3.3.4):
-    resolution: {integrity: sha512-cJneVWMif1NlYk5vkgDAGjtcR9Ab9j1Srh5hJUdM25+slvmutaGlwhPJAJ0Ao1nSH34ZqECEohvwbs/LE9vuvw==}
+  /@fzdwx/launcher-api@0.0.14(primeflex@3.3.1)(primeicons@5.0.0)(primevue@3.29.2)(vue@3.3.4):
+    resolution: {integrity: sha512-fYXGQIgK4/ayMvfsITaxh4bFUNcyqxRCZzwU2Wp437KCCfZavlfkrhYxCHWjzYGSj98ADlTrzTOgR+wYFXr4dg==}
     peerDependencies:
       primeflex: ^3.1.2
       primeicons: ^5.0.0
@@ -303,6 +312,11 @@ packages:
     requiresBuild: true
     optional: true
 
+  /fuse.js@6.6.2:
+    resolution: {integrity: sha512-cJaJkxCCxC8qIIcPBF9yGxY0W/tVZS3uEISDxhYIdtk8OL93pe+6Zj7LjCqVV4dzbqcriOZ+kQ/NE4RXZHsIGA==}
+    engines: {node: '>=10'}
+    dev: true
+
   /glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
@@ -332,10 +346,20 @@ packages:
     resolution: {integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==}
     engines: {node: '>=0.12.0'}
 
+  /mitt@3.0.0:
+    resolution: {integrity: sha512-7dX2/10ITVyqh4aOSVI9gdape+t9l2/8QxHrFmUXu4EEUpdlxl6RudZUPZoc+zuY2hk1j7XxVroIVIan/pD/SQ==}
+    dev: true
+
   /nanoid@3.3.6:
     resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+
+  /nanoid@4.0.2:
+    resolution: {integrity: sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==}
+    engines: {node: ^14 || ^16 || >=18}
+    hasBin: true
+    dev: true
 
   /normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
