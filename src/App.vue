@@ -3,7 +3,7 @@
     <Command.Dialog :visible="true" theme="raycast">
       <template #header>
         <div class="hidden">
-          <Command.Input v-model="userInputVal"/>
+          <Command.Input disable-filter v-model="userInputVal"/>
         </div>
       </template>
       <template #body>
@@ -24,14 +24,14 @@
   </div>
 </template>
 <script lang="ts" setup>
-import {onMounted, ref} from "vue";
+import {ref} from "vue";
 
 import {Command, exit, getClipText, onUserInput, useCommandEvent} from "@fzdwx/launcher-api";
 
 let commandEvent = useCommandEvent();
 
 let userInputVal = ref('');
-onUserInput('github', (s) => {
+onUserInput('my-plugin-test-fzdwx', (s) => {
   commandEvent.emitter.emit('setInputValue', s)
 })
 const text = ref('')

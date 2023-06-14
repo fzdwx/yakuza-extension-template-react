@@ -14,8 +14,8 @@ dependencies:
 
 devDependencies:
   '@fzdwx/launcher-api':
-    specifier: ^0.0.14
-    version: 0.0.14(primeflex@3.3.1)(primeicons@5.0.0)(primevue@3.29.2)(vue@3.3.4)
+    specifier: ^0.0.36
+    version: 0.0.36(primeflex@3.3.1)(primeicons@5.0.0)(primevue@3.29.2)(vue@3.3.4)
   '@tsconfig/node18':
     specifier: ^2.0.1
     version: registry.npmmirror.com/@tsconfig/node18@2.0.1
@@ -253,8 +253,8 @@ packages:
     dev: true
     optional: true
 
-  /@fzdwx/launcher-api@0.0.14(primeflex@3.3.1)(primeicons@5.0.0)(primevue@3.29.2)(vue@3.3.4):
-    resolution: {integrity: sha512-fYXGQIgK4/ayMvfsITaxh4bFUNcyqxRCZzwU2Wp437KCCfZavlfkrhYxCHWjzYGSj98ADlTrzTOgR+wYFXr4dg==}
+  /@fzdwx/launcher-api@0.0.36(primeflex@3.3.1)(primeicons@5.0.0)(primevue@3.29.2)(vue@3.3.4):
+    resolution: {integrity: sha512-GG1PzpHPBWX7aAg7t9BMyIr7p3MyDkhU5SdZD2izR9oYe6UVXJOP/9a7QmaO/gYNcyv3wL7hllLl8GIJOstBtQ==}
     peerDependencies:
       primeflex: ^3.1.2
       primeicons: ^5.0.0

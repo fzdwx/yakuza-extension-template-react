@@ -1,6 +1,12 @@
 {
   "name": "my-plugin-test-fzdwx",
   "version": "0.0.0",
+  "launcher": {
+    "icon": "https://raw.githubusercontent.com/fzdwx/launcher-extension-sample/main/public/favicon.ico",
+    "description": "测试插件",
+    "author": "fzdwx",
+    "name": "my-plugin-test-fzdwx"
+  },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
@@ -17,7 +23,7 @@
     "mitt": "^3.0.0",
     "nanoid": "^4.0.2",
     "sass": "^1.63.3",
-    "@fzdwx/launcher-api": "^0.0.14",
+    "@fzdwx/launcher-api": "^0.0.36",
     "@tsconfig/node18": "^2.0.1",
     "@types/node": "^18.16.17",
     "@vitejs/plugin-vue": "^4.2.3",
