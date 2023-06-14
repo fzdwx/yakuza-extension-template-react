@@ -2,45 +2,19 @@
 
 It's https://github.com/fzdwx/launcher extension sample
 
-## dev
+### Development:
 
 ```shell
 pnpm install
 pnpm run dev
 ```
 
-and start `launcher` type dev
-![img.png](img.png)
+1. Use [template](https://github.com/fzdwx/launcher-extension-sample)
+2. Start the launcher after pnpm dev, enter dev and turn on `Extension dev mode` option
 
-## publish
+### Release:
 
-You must build and commit `dist` folder
-
-```shell
-## e.g
-pnpm build
-git add ./dist/*
-git commit -m "feat: realease"
-```
-
-Modify `package.json`
-
-```json
-{
-  "name": "my-plugin-test-fzdwx",
-  "version": "0.0.0",
-  "launcher": {
-    "icon": "https://raw.githubusercontent.com/fzdwx/launcher-extension-sample/main/public/favicon.ico",
-    "description": "测试插件",
-    "author": "fzdwx",
-    "name": "my-plugin-test-fzdwx"
-  }
-  /* ...*/
-}
-```
-
-Create pr to https://github.com/fzdwx/launcher-extension
-
-add https://github.com/fzdwx/launcher-extension/blob/main/extensions.json you extension
-
-
+1. Modify the fields related to the `launcher` object in `package.json`
+2. Must submit the `dist` directory
+3. Submit a pr to https://github.com/fzdwx/launcher-extension, in `extensions .json` Add information about your
+   extension
