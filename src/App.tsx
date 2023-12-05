@@ -26,7 +26,7 @@ const App = () => {
     return (
         <Command className='raycast' shouldFilter={false}>
             <div cmdk-raycast-top-shine=""/>
-            <Command.Input onValueChange={onValueChange} autoFocus ref={inputRef}/>
+            <Command.Input loading={loading} onValueChange={onValueChange} autoFocus ref={inputRef}/>
 
             <Command.List ref={listRef}>
                 {/* @ts-ignore */}
@@ -57,9 +57,6 @@ const RepoList = ({data}: {
         )
     }
 
-    console.log(data);
-
-
     return (
         <div>
             <Command.Group>
@@ -67,6 +64,9 @@ const RepoList = ({data}: {
                     <Command.Item
                         key={item.full_name}
                         value={item.full_name}
+                        onSelect={() => {
+                            window.launcher.openUrl(item.html_url)
+                        }}
                     >
                         <img src={item.owner.avatar_url} className="w-5 h-5 mr-2"/>
                         <span>{item.full_name}</span>
