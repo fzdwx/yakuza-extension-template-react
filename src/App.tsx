@@ -27,7 +27,6 @@ const App = () => {
         <Command className='raycast' shouldFilter={false}>
             <div cmdk-raycast-top-shine=""/>
             <Command.Input onValueChange={onValueChange} autoFocus ref={inputRef}/>
-            <hr cmdk-raycast-loader=""/>
 
             <Command.List ref={listRef}>
                 {/* @ts-ignore */}

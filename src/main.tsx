@@ -8,7 +8,9 @@ import "launcher-api/dist/index.css"
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
         <Suspense fallback={"Loading..."}>
-            <App/>
+            <div className='dark bg-dark/90 backdrop-blur '>
+                <App/>
+            </div>
         </Suspense>
     </React.StrictMode>,
 )

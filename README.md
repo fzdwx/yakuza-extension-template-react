@@ -6,6 +6,7 @@ It's https://github.com/fzdwx/launcher extension sample
 
 ```shell
 pnpm install
+pnpm update launcher-api
 pnpm run dev
 ```
 
@@ -14,7 +15,6 @@ pnpm run dev
 
 ### Release:
 
-1. Modify the fields related to the `launcher` object in `package.json`
-2. Must submit the `dist` directory
-3. Submit a pr to https://github.com/fzdwx/launcher-extension, in `extensions .json` Add information about your
+1. Must submit the `dist` directory
+2. Submit a pr to https://github.com/fzdwx/launcher-extension, in `extensions .json` Add information about your
    extension
