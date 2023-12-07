@@ -11,7 +11,7 @@ pnpm run dev
 ```
 
 1. Use [template](https://github.com/fzdwx/launcher-extension-sample)
-2. Start the launcher after pnpm dev, enter dev and turn on `Extension dev mode` option
+2. Start the launcher after pnpm dev, enter dev and turn on `dev mode` option
 
 ### Release:
 
