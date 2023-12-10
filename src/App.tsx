@@ -6,6 +6,7 @@ import {
 } from './useRepo';
 import {useRequest} from 'ahooks';
 import {formatDate} from "./date";
+import {useKeyPress} from "ahooks";
 
 const numberFormatter = new Intl.NumberFormat("en-US", {notation: "compact", compactDisplay: "short"});
 const App = () => {
@@ -17,6 +18,11 @@ const App = () => {
     });
     React.useEffect(() => {
         inputRef.current?.focus()
+    })
+
+    useKeyPress('Esc', () => {
+        // exit current ext
+        window.launcher.loadMainView()
     })
 
     const onValueChange = (v: string) => {
@@ -40,7 +46,6 @@ const App = () => {
                     Open Application
                     <kbd>↵</kbd>
                 </button>
-
                 <hr/>
 
             </div>
