@@ -4,12 +4,12 @@ import {
     Container,
     Footer,
     Input,
-    RenderItem,
     ResultsRender,
     useActionStore,
-    useMatches
+    useMatches,
+    mainView, shell
 } from 'launcher-api'
-import React, {useEffect} from 'react'
+import React from 'react'
 import {
     SearchRepositoriesResponse,
     getRepo, Repository
@@ -41,7 +41,7 @@ const App = () => {
                 id: item.id,
                 name: item.full_name,
                 perform: () => {
-                    window.launcher.openUrl(item.html_url)
+                    shell.openUrl(item.html_url)
                 },
                 priority: item.stargazers_count,
                 item: item
@@ -52,8 +52,7 @@ const App = () => {
     useRegisterActions(mapper(data), [data])
 
     useKeyPress('Esc', () => {
-        // exit current ext
-        window.launcher.loadMainView()
+        mainView.exit()
     })
 
     const onValueChange = (v: string) => {
