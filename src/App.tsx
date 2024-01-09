@@ -130,6 +130,7 @@ const App = () => {
                         </div>
                     }}
                     current={results.length === 0 ? null : results[state.activeIndex]}
+                    actions={() => []}
                 />
             </Background>
         </Container>
